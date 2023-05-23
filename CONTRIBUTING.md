@@ -1,363 +1,359 @@
-# Contributing to JHipster
+# JHipsterへの貢献
 
-Are you ready to contribute to JHipster? We'd love to have you on board, and we will help you as much as we can. Here are the guidelines we'd like you to follow so that we can be of more help:
+あなたはJHipsterに貢献する準備ができていますか?私たちはあなたを参加させたいと思っており、私たちはできる限りあなたを支援します。私たちがより多くの助けとなることができるように、私たちがあなたに従ってほしいガイドラインは次のとおりです:
 
-- [Questions and help](#question)
-- [Issues and Bugs](#issue)
-- [Bug bounties](#bounties)
-- [Feature Requests](#feature)
-- [RFCs](#rfcs)
-- [Submission Guidelines](#submit)
-- [Generator development setup](#setup)
-- [Coding Rules](#rules)
-- [Git Commit Guidelines](#commit)
+- [質問とヘルプ](#question)
+- [問題とバグ](#issue)
+- [バグ報奨金](#bounties)
+- [機能の要求](#feature)
+- [RFC](#RFCs)
+- [送信ガイドライン](#submit)
+- [ジェネレータ開発の設定](#setup)
+- [コーディングルール](#rules)
+- [Gitコミットのガイドライン](#commit)
 
-And don't forget we also accept [financial contributions to the project](https://www.jhipster.tech/sponsors/) using OpenCollective.
+また、[プロジェクトへの資金提供](OpenCollectiveを使ったhttps://www.jhipster.tech/sponsors/)も受け入れていることを忘れないでください。
 
-## <a name="question"></a> Questions and help
+## <a name="question"></a>質問とヘルプ
 
-This is the JHipster bug tracker, and it is used for [Issues and Bugs](#issue) and for [Feature Requests](#feature). It is **not** a help desk or a support forum.
+これはJHipsterバグ・トラッカで、[Issues and Bugs](#issue)と[Feature Requests](#feature)に使用されます。ヘルプ・デスクやサポート・フォーラムでは **ありません** 。
 
-If you have a question on using JHipster, or if you need help with your JHipster project, please [read our help page](https://www.jhipster.tech/help/) and use the [JHipster tag on StackOverflow](http://stackoverflow.com/tags/jhipster) or join our [Gitter.im chat room](https://gitter.im/jhipster/generator-jhipster).
+JHipsterの使用について質問がある場合、またはJHipsterプロジェクトのヘルプが必要な場合は、[ヘルプページを読む](https://www.jhipster.tech/help/)で[StackOverflowのJHipsterタグ](http://stackoverflow.com/tags/jhipster)を使用するか、[Gitter.imチャットルーム](https://gitter.im/jhipster/generator-jhipster)に参加してください。
 
-## <a name="issue"></a> Issues and Bugs
+## <a name="issue"></a> 問題とバグ
 
-If you find a bug in the source code or a mistake in the documentation, you can help us by [submitting a ticket](https://opensource.guide/how-to-contribute/#opening-an-issue) to our [GitHub issues](https://github.com/jhipster/generator-jhipster/issues). Even better, you can submit a Pull Request to our [JHipster generator project](https://github.com/jhipster/generator-jhipster) or to our [Documentation project](https://github.com/jhipster/jhipster.github.io).
+ソースコードのバグやドキュメントの間違いを見つけた場合は、[チケットを送信](https://opensource.guide/how-to-contribute/#opening-an-issue)して、[GitHub issues](https://github.com/jhipster/generator-jhipster/issues)に送信してください。さらに、[JHipsterジェネレータプロジェクト](https://github.com/jhipster/generator-jhipster)または[ドキュメントプロジェクト](https://github.com/jhipster/jhipster.github.io)にプルリクエストを送信することもできます。
 
-**Please see the Submission Guidelines below**.
+**下記の提出ガイドラインを参照してください**。
 
-## <a name="bounties"></a> Bug bounties
+## <a name="bounties"></a>バグ報奨金
 
-If you submitted a Pull Request that fixes a ticket with the "\$100" tag, then you are eligible to our bug bounty program! Go to our [bug bounties documentation](https://www.jhipster.tech/bug-bounties/) for more information, and claim your money.
+"\$100"タグの付いたチケットを修正するプルリクエストを送信した場合は、バグ報奨金プログラムの対象となります!詳細については、[バグ報奨金に関するドキュメント](https://www.jhipster.tech/bug-bounties/)にアクセスして、料金を請求してください。
 
 ## <a name="feature"></a> Feature Requests
 
-You can request a new feature by submitting a ticket to our [GitHub issues](https://github.com/jhipster/generator-jhipster/issues). If you
-would like to implement a new feature then consider what kind of change it is:
+新しい機能をリクエストするには、[GitHub issues](https://GitHub.com/jhipster/generator-jhipster/issues)にチケットを送信してください。
+新しい機能を実装したい場合は、それがどのような変更であるかを検討してください:
 
-- **Major Changes** that you wish to contribute to the project should be discussed first. Please open a ticket which clearly states that it is a feature request in the title and explain clearly what you want to achieve in the description, and the JHipster team will discuss with you what should be done in that ticket. You can then start working on a Pull Request. In order to communicate major changes proposals and receive reviews from the core team, you can also submit an RFC.
-- **Small Changes** can be proposed without any discussion. Open up a ticket which clearly states that it is a feature request in the title. Explain your change in the description, and you can propose a Pull Request straight away.
+- **主要な変更** についてあなたがプロジェクトに貢献したい場合、最初に議論される必要があります。タイトルに機能要求であることが明記されたチケットを開き、説明であなたが達成したいことを明確に説明すると、JHipsterチームはそのチケットで何をすべきかをあなたと議論します。その後、あなたはプルリクエストの作業を開始できます。主要な変更提案を伝達し、コアチームからレビューを受けるために、あなたはRFCを提出することもできます。
+- **小さな変更** は、ディスカッションなしで提案できます。タイトルに機能リクエストであることが明記されたチケットを開きます。説明欄に変更内容を記載すると、すぐにプルリクエストを提案できます。
 
-## <a name="rfcs"></a> RFCs
+## <a name="rfcs"></a> RFC
 
-Sometimes, major feature requests are "complex" or "substantial". In this case, GitHub Issues might not be the best tool to to present them because we will need a lot of going back and forth to reach a consensus.
+時には、主要な機能要求が「複雑」または「本質的」であることもあります。この場合、GitHub Issuesは、合意に達するために何度も行ったり来たりする必要があるため、それらを提示するのに最適なツールではないかもしれません。
 
-So we ask that these feature request be put through a formal design process and have their specifications described in an "RFC" (request for comments) that will be validated by the team through a Pull Request Review.
+そのため、これらの機能要求は正式な設計プロセスを経て、"RFC" (request for comments)に記述された仕様を持つようにし、プルリクエストレビューを通じてチームによって検証してもらうことにしています。
 
-The RFC process is intended to provide a consistent and controlled path for major features and directions of the project.
+RFCプロセスは、プロジェクトの主要な機能と方向性に対して、一貫した管理された道筋を提供することを目的としています。
 
-To submit an RFC follow those steps:
+RFCを送信するには、次の手順を実行します。
 
-1. Discuss the RFC proposal with the core team through GitHub issues or other channels
-2. Create the initial GitHub issue for the Feature Request if it doesn't already exist
-3. Copy the `rfcs/0-jhipster-rfc-template.md` to `rfcs/${featureRequestIssueNumber}-my-feature-request-name.md`
-4. Fill in the RFC, make sure to complete every required section
-5. Submit the RFC as a Pull Request with the summary of the proposal in the PR description
-6. Build consensus and integrate feedback from the reviewers
-7. The Pull Request is either accepted (merged), rejected (closed) or postponed (given an "on hold" status)
+1. GitHubイシューまたはその他のチャネルを通じて、コアチームとRFC提案について議論します。
+2. Feature Requestの最初のGitHubイシューがまだ存在しない場合は作成します。
+3. `rfcs/0-jhipster-rfc-template.md`を`rfcs/${featureRequestIssueNumber}-my-feature-request-name.md`にコピーします。
+4. RFCに記入し、必要なすべてのセクションを完了するようにします。
+5. RFCをプルリクエストとして送信し、提案の概要をPRの説明に記載します。
+6. コンセンサスを構築し、レビュー担当者からのフィードバックを統合します。
+7. プルリクエストは、受け入れられる（マージされる）か、または拒否（クローズ）、または延期（「保留中」ステータス）されます。
 
-Note: The JHipster RFC process is inspired by [Rust RFCs](https://rust-lang.github.io/rfcs/).
+注:JHipsterのRFCプロセスは、[RustのRFC](https://rust-lang.github.io/rfcs/)に触発されたものです。
 
-## <a name="submit"></a> Submission Guidelines
+## <a name="submit"></a> 提出ガイドライン
 
-### [Submitting an Issue](https://opensource.guide/how-to-contribute/#opening-an-issue)
+### [Issueの送信](https://opensource.guide/how-to-contribute/#opening-an-issue)
 
-Before you submit your issue search the [archive](https://github.com/jhipster/generator-jhipster/issues?utf8=%E2%9C%93&q=is%3Aissue), maybe your question was already answered.
+Issueを送信する前に、[アーカイブ](https://github.com/jhipster/generator-jhipster/issues?utf8=%E2%9C%93&q=is%3Aissue)を検索してください。おそらく、あなたの質問はすでに回答されています。
 
-If your issue appears to be a bug, and has not been reported, open a new issue.
-Help us to maximize the effort we can spend fixing issues and adding new
-features, by not reporting duplicate issues. Providing the following information will increase the
-chances of your issue being dealt with quickly:
+問題がバグのようで、まだ報告されていない場合は、新しい問題を開きます。
+重複する問題を報告しないことで、
+問題の修正と新機能の追加に費やすことができる労力を最大化できるようになります。
+次の情報を提供することで、問題が迅速に処理される可能性が高まります:
 
-- **Overview of the issue** - if an error is being thrown a stack trace helps
-- **Motivation for or Use Case** - explain why this is a bug for you
-- **Reproduce the error** - an unambiguous set of steps to reproduce the error. If you have a JavaScript error, maybe you can provide a live example with
-  [JSFiddle](http://jsfiddle.net/)?
-- **Related issues** - has a similar issue been reported before?
-- **Suggest a Fix** - if you can't fix the bug yourself, perhaps you can point to what might be
-  causing the problem (line of code or commit)
-- **JHipster Version(s)** - is it a regression?
-- **JHipster configuration, a `.yo-rc.json` file generated in the root folder** - this will help us to replicate the scenario, you can remove the rememberMe key.
-- **Entity configuration(s) `entityName.json` files generated in the `.jhipster` directory** - if the error is during an entity creation or associated with a specific entity
-- **Browsers and Operating System** - is this a problem with all browsers or only IE8?
+- **問題の概要** - エラーがスローされている場合は、スタックトレースが役立ちます。
+- **動機またはユースケース** - これがあなたにとってバグである理由を説明してください
+- **エラーを再現する** - エラーを再現するための明確な手順のセット。JavaScriptエラーがある場合は、
+[JSFiddle](http://jsfiddle.net/)でライブサンプルを提供できる可能性があります。
+- **関連する問題** - 同様の問題は以前にも報告されていますか?
+- **修正を提案する** - 自分でバグを修正できない場合は、
+問題の原因（コード行またはコミット）を指摘できます。
+- **JHipsterバージョン** - これはリグレッションですか?
+- **JHipster設定。ルートフォルダに生成された`.yo-rc.json`ファイル** - これはシナリオを複製するのに役立ちます。rememberMeキーを削除できます。
+- **エンティティ構成。`.jhipster`ディレクトリに生成される`entityName.json`ファイルが** - エラーがエンティティの作成中であるか、特定のエンティティに関連付けられている場合
+- **ブラウザとオペレーティングシステム** - これはすべてのブラウザの問題ですか、それともIE8だけの問題ですか?
 
-You can use `jhipster info` to provide us the information we need.
+必要な情報を提供するには、`jhipster info`を使用してください。
 
-Click [here][issue-template] to open a bug issue with a pre-filled template. For feature requests and enquiries you can use [this template][feature-template].
+[ここ][issue-template]をクリックして、事前に入力されたテンプレートを使用してバグの問題を開きます。機能の要求や問い合わせには、[このテンプレート][feature-template]を使用できます。
 
-You can run `jhipster info` in your project folder to get most of the above required info.
+上記の必要な情報のほとんどを取得するには、プロジェクトフォルダで`jhipster info`を実行します。
 
-Issues opened without any of these info will be **closed** without any explanation.
+これらの情報なしでオープンされた問題は、説明なしで**クローズ**されます。
 
-### [Submitting a Pull Request](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
+### [プルリクエストの送信](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
 
-Before you submit your pull request consider the following guidelines:
+プル要求を送信する前に、次のガイドラインを考慮してください。
 
-- Search [GitHub](https://github.com/jhipster/generator-jhipster/pulls?utf8=%E2%9C%93&q=is%3Apr) for an open or closed Pull Request
-  that relates to your submission.
-- If you want to modify the JHipster generator, read our [Generator development setup](#setup)
-- Make your changes in a new git branch
+- [GitHub](https://github.com/jhipster/generator-jhipster/pulls?utf8=%E2%9C%93&q=is%3Apr)で、送信に関連するオープンまたはクローズされたプルリクエストを検索します。
+- JHipsterジェネレータを変更したい場合は、[Generator開発セットアップ](#setup)を読んでください。
+- 新しいgitブランチで変更を行います。
 
   ```shell
   git checkout -b my-fix-branch main
   ```
 
-- Create your patch, **including appropriate test cases**.
-- Follow our [Coding Rules](#rules).
-- Generate a new JHipster project, and ensure that all tests pass
+- **適切なテストケース**を含むパッチを作成します。
+- 私たちの[コーディングルール](#rules)に従ってください。
+- 新しいJHipsterプロジェクトを生成し、すべてのテストに合格することを確認します。
 
   ```shell
   mvnw verify -Pprod
   ```
 
-- Test that the new project runs correctly:
+- 新しいプロジェクトが正しく実行されることをテストします。
 
   ```shell
   mvnw spring-boot:run
   ```
 
-- You can generate our Continuous Integration (with GitHub Actions and Azure Pipelines) by following [this](#running-integration-tests-locally)
+- 継続的インテグレーション(GitHub ActionsとAzure Pipelinesを使用)は、[ここ](#running-integration-tests-locally)に従うことで生成できます。
 
-- Commit your changes using a descriptive commit message that follows our
-  [commit message conventions](#commit-message-format).
+- [コミットメッセージのきまり](#commit-message-format)に従った記述的なコミットメッセージを使用して、変更をコミットします。
 
   ```shell
   git commit -a
   ```
 
-  Note: the optional commit `-a` command line option will automatically "add" and "rm" edited files.
+  注:オプションのcommit `-a`コマンドラインオプションは、編集されたファイルを自動的に"add"および"rm"します。
 
-- Push your branch to GitHub:
+- ブランチをGitHubにプッシュします:
 
   ```shell
   git push origin my-fix-branch
   ```
 
-- In GitHub, send a pull request to `jhipster/generator-jhipster:main`.
-- If we suggest changes then
+- GitHubで、`jhipster/generator-jhipster:main`にプルリクエストを送信します。
+- 私たちが変更を提案する場合
 
-  - Make the required updates.
-  - Re-run the JHipster tests on your sample generated project to ensure tests are still passing.
-  - Rebase your branch and force push to your GitHub repository (this will update your Pull Request):
+  - 必要な更新を行います。
+  - 生成されたサンプルプロジェクトでJHipsterテストを再実行して、テストがまだ合格していることを確認します。
+  - ブランチをリベースして、GitHubリポジトリに強制的にプッシュします（これによりプルリクエストが更新されます）:
 
     ```shell
     git rebase main -i
     git push -f
     ```
 
-That's it! Thank you for your contribution!
+以上です!ご協力ありがとうございました!
 
-#### Resolving merge conflicts ("This branch has conflicts that must be resolved")
+#### マージの競合を解決する ("このブランチには解決する必要のある競合があります")
 
-Sometimes your PR will have merge conflicts with the upstream repository's main branch. There are several ways to solve this but if not done correctly this can end up as a true nightmare. So here is one method that works quite well.
+PRでは、アップストリームリポジトリのメインブランチとのマージ競合が発生することがあります。これを解決する方法はいくつかありますが、正しく行わないと、これは本当に悪夢になる可能性があります。ここでは、非常にうまく機能する1つの方法を示します。
 
-- First, fetch the latest information from the main
+- まず、メインから最新の情報を取得します。
 
   ```shell
   git fetch upstream
   ```
 
-- Rebase your branch against the upstream/main
+- upstream/main に対してブランチをベース変更します。
 
   ```shell
   git rebase upstream/main
   ```
 
-- Git will stop rebasing at the first merge conflict and indicate which file is in conflict. Edit the file, resolve the conflict then
+- Gitは最初のマージ競合でリベースを停止し、どのファイルが競合しているかを示します。ファイルを編集し、競合を解決してから以下を実施します。
 
   ```shell
   git add <the file that was in conflict>
   git rebase --continue
   ```
 
-- The rebase will continue up to the next conflict. Repeat the previous step until all files are merged and the rebase ends successfully.
-- Re-run the JHipster tests on your sample generated project to ensure tests are still passing.
-- Force push to your GitHub repository (this will update your Pull Request)
+- リベースは次の競合まで続行されます。すべてのファイルがマージされ、リベースが正常に終了するまで、前の手順を繰り返してください。
+- 生成されたサンプルプロジェクトでJHipsterテストを再実行して、テストがまだ合格していることを確認します。
+- GitHubリポジトリへ強制プッシュします（プルリクエストを更新します）
 
   ```shell
   git push -f
   ```
 
-#### After your pull request is merged
+#### プルリクエストがマージされた後
 
-After your pull request is merged, you can safely delete your branch and pull the changes
-from the main (upstream) repository:
+プルリクエストがマージされたら、ブランチを安全に削除して、
+メイン (upstream)リポジトリから変更をプルできます。
 
-- Delete the remote branch on GitHub either through the GitHub web UI or your local shell as follows:
+- 次のように、GitHub Web UIまたはローカルシェルのいずれかを使用して、GitHub上のリモートブランチを削除します:
 
   ```shell
   git push origin --delete my-fix-branch
   ```
 
-- Check out the main branch:
+- mainブランチをcheckoutします。
 
   ```shell
   git checkout main -f
   ```
 
-- Delete the local branch:
+- ローカルブランチを削除します。
 
   ```shell
   git branch -D my-fix-branch
   ```
 
-- Update your main with the latest upstream version:
+- 最新のupstreamバージョンでmainを更新します。
 
   ```shell
   git pull --ff upstream main
   ```
 
-## <a name="setup"></a> Generator development setup
+## <a name="setup"></a> Generator開発セットアップ
 
-JHipster is a [Yeoman Generator](http://yeoman.io/), so you must follow the [Yeoman authoring documentation](http://yeoman.io/authoring/) in order to be able to run and test your changes.
+JHipsterは[Yeoman Generator](http://yeoman.io/)なので、変更を実行してテストするには、[Yeomanのオーサリング文書](http://yeoman.io/authoring/)に従う必要があります。
 
-Here are the most important steps.
+ここでは、最も重要な手順を示します。
 
-### Fork the generator-jhipster project
+### generator-jhipster projectをフォークする
 
-Go to the [generator-jhipster project](https://github.com/jhipster/generator-jhipster) and click on the "fork" button. You can then clone your own fork of the project, and start working on it.
+[generator-jhipsterプロジェクト](https://github.com/jhipster/generator-jhipster)に移動し、"fork"ボタンをクリックします。次に、プロジェクトの独自のフォークを複製して、作業を開始できます。
 
-[Please read the GitHub forking documentation for more information](https://help.github.com/articles/fork-a-repo)
+[詳細については、GitHubフォーキングドキュメントをお読みください](https://help.github.com/articles/fork-a-repo)
 
-### Set NPM to use the cloned project
+### 複製されたプロジェクトを使用するようにNPMを設定する
 
-In your cloned `generator-jhipster` project, run `npm link` and then run `npm ci`.
+複製された`generator-jhipster`プロジェクトで、`npm link`を実行してから`npm ci`を実行します。
 
-`npm link` will make a symbolic link from the global `node_modules` version to point to this folder, so when we run `jhipster`, you will now use the development version of JHipster.
+`npm link`は、グローバルな`node_modules`バージョンからこのフォルダを指すシンボリックリンクを作成します。そのため、`jhipster`を実行すると、JHipsterの開発バージョンが使用されます。
 
-`npm ci` will do a clean installation of all the project dependencies.
+`npm ci`は、すべてのプロジェクトの依存関係をクリーンインストールします。
 
-For testing, you will want to generate an application, and there is a specific issue here: for each application, JHipster installs a local version of itself. This is made to enable several applications to each use a specific JHipster version (application A uses JHipster 3.1.0, and application B uses JHipster 3.2.0).
+テストでは、アプリケーションを生成する必要がありますが、ここには特定の問題があります。各アプリケーションに対して、JHipsterはそれ自体のローカルバージョンをインストールします。これは、複数のアプリケーションがそれぞれ特定のJHipsterバージョンを使用できるようにするためです(アプリケーションAはJHipster 3.1.0を使用し、アプリケーションBはJHipster 3.2.0を使用します)。
 
-To overcome this you need to run `npm link generator-jhipster` on the generated project folder as well, so that the local version has a symbolic link to the development version of JHipster.
-Also add the option `--skip-jhipster-dependencies` to generate the application ignoring the JHipster dependencies (otherwise a released version will be installed each time npm install/ci is called). You can later on re-add the dependency with the command `jhipster --no-skip-jhipster-dependencies`.
+これを解決するには、生成されたプロジェクトフォルダでも`npm link generator-jhipster`を実行して、ローカルバージョンがJHipsterの開発バージョンへのシンボリックリンクを持つようにする必要があります。
+あるいは、オプション`--skip-jhipster-dependencies`を追加して、JHipsterの依存関係を無視してアプリケーションを生成します（そうしないと、npm install/ciが呼び出されるたびにリリースバージョンがインストールされます）。後でコマンド`jhipster --no-skip-jhipster-dependencies`を使用して、依存関係を再追加できます。
 
-To put it in a nutshell, you need to:
+簡単に言うと、次のことが必要です。
 
-1.  run `npm link` on the `generator-jhipster` project (link globally)
-2.  run `jhipster --skip-jhipster-dependencies` on the generated application folder
+1.  `generator-jhipster`プロジェクトで`npm link`を実行します（グローバルにリンクされます）。
+2.  生成されたアプリケーションフォルダで`jhipster --skip-jhipster-dependencies`を実行します。
 
-You can execute `jhipster --install-path` to check where jhipster is being executed from.
+`jhipster --install-path`を実行すると、jhipsterがどこから実行されているかを確認できます。
 
-You can test your setup by making a small change in your cloned generator, and running again on an existing JHipster project:
+設定をテストするには、クローンしたジェネレータに小さな変更を加え、既存のJHipsterプロジェクトで再度実行します。
 
-For projects with jhipster third party library (i.e. react-jhipster, ng-jhipster, etc.) you need to run `npm link` on the library project as well, then npm link the original framework (i.e. react) from the generated project to the library project `cd react-jhipster && npm link <path-to-generated-project>/node_modules/react`.
+jhipsterサードパーティライブラリ(react-jhipster、ng-jhipsterなど)を使用するプロジェクトの場合は、ライブラリプロジェクトでも`npm link`を実行する必要があります。次に、npmは、生成されたプロジェクトからライブラリプロジェクトに元のフレームワーク(reactなど)をリンクします。`cd react-jhipster && npm link <path-to-generated-project>/node_modules/react`
 
 ```shell
 jhipster
 ```
 
-Depending on which parts of the generator you have changed, do not forget to run jhipster command with the proper arguments e.g. when updating the entity template run:
+ジェネレータのどの部分を変更したかに応じて、適切な引数を指定してjhipsterコマンドを実行することを忘れないでください。たとえば、エンティティテンプレートを更新する場合は、次のコマンドを実行します。
 
 ```shell
 jhipster --with-entities
 ```
 
-You should see your changes reflected in the generated project.
+変更内容が、生成されたプロジェクトに反映されます。
 
-Note: The generated project might not build properly in case the generator is using a
-snapshot version of [jhipster/jhipster-bom](https://github.com/jhipster/jhipster-bom). This issue is mentioned in; https://github.com/jhipster/generator-jhipster/issues/9571. In
-this case clone the jhipster/jhipster-bom project and build it using:
+注意:ジェネレータが[jhipster/jhipster-bom](https://github.com/jhipster/jhipster-bom)のスナップショット・バージョンを使用している場合、生成されたプロジェクトが正しく構築されないことがあります。この問題は、https://github.com/jhipster/generator-jhipster/issues/9571 で言及されています。この場合、jhipster/jhipster-bomプロジェクトをクローニングし、次を使用して構築します。
 
 ```shell script
 ./mvnw clean install -Dgpg.skip=true
 ```
 
-or on Windows:
+または、Windowsの場合:
 
 ```
 .\mvnw.cmd clean install -D"gpg.skip=true"
 ```
 
-### Use a text editor
+### テキストエディタを使用する
 
-As modifying the JHipster generator includes modifying Java and JavaScript templates, most IDE will not work correctly. We recommend you use a text editor like [VSCode](https://code.visualstudio.com/) or [IntelliJ IDEA](https://www.jetbrains.com/idea/) to code your changes. The ESLint and EditorConfig extensions are recommended to help with respecting code conventions.
+JHipsterジェネレータの変更にはJavaおよびJavaScriptテンプレートの変更が含まれるため、ほとんどのIDEは正しく動作しません。[VSCode](https://code.visualstudio.com/)または[IntelliJ IDEA](https://www.jetbrains.com/idea/)のようなテキストエディタを使用して変更をコーディングすることをお勧めします。ESLintおよびEditorConfig拡張機能は、コードの規則を尊重するのに役立つことが推奨されます。
 
-### Use a debugger
+### デバッガの使用
 
-It is possible to debug JHipster's code using a Node.js debugger. To achieve this setup your debugger to launch `cli/jhipster.js`.
+Node.jsデバッガを使用してJHipsterのコードをデバッグすることができます。この設定を行うには、デバッガで`cli/jhipster.js`を起動します。
 
-#### Debugging with VSCode
+#### VSCodeを使用したデバッグ
 
-To start debugging JHipster with **VSCode**, open the generator code in your workspace and simply press F5 (or click the green arrow in the **Debug** menu reachable with Ctrl/Cmd+Shift+D). This will start the generator in debug mode and generate files in the [test-integration/samples/app-sample-dev](test-integration/samples/app-sample-dev) folder.
+**VSCode**を使用してJHipsterのデバッグを開始するには、ワークスペースでジェネレータコードを開き、F5キーを押すだけです(または、Ctrl/Cmd+Shift+Dで到達可能な**Debug**メニューの緑色の矢印をクリックします)。これにより、ジェネレータがデバッグモードで起動し、[test-integration/samples/app-sample-dev](test-integration/samples/app-sample-dev)フォルダにファイルが生成されます。
 
-It is also possible to debug sub generators by selecting one of the other debug options (for example `jhipster entity`). Those debug configurations are specified in the `.vscode/launch.json` file.
+他のデバッグオプション(例えば`jhipster entity`)の1つを選択することで、サブジェネレータをデバッグすることもできます。これらのデバッグ設定は`.vscode/launch.json`ファイルで指定されます。
 
-## Generator tests and snapshots.
+## ジェネレータのテストとスナップショット
 
-Run every test with lint/prettier
+lint/prettierを使用してすべてのテストを実行します。
 `npm test`
 
-Run every test without lint/prettier
+lint/prettierを使用せずすべてのテストを実行します。
 `npx mocha`
 
-Update every test snapshot
+すべてのテストスナップショットを更新します。
 `npm run update-snapshots`
 
-Run specific tests
+特定のテストを実行します。
 `npx mocha <path>`
 
-Run specific tests in series (improved error reporting)
+（エラー報告が改善された）特定のテストを連続して実行します。
 `npx mocha <path> --no-parallel`
 
-Update specific test snapshot
+特定のテストスナップショットを更新します。
 `npm run update-snapshot -- <path>` or `npx mocha <path> --no-parallel --updateSnapshot`
 
-Fixing lint and prettier errors
+lintエラーとprettierエラーを修正します。
 `npm run lint-fix`
 
-## Running integration tests locally
+## ローカルでの統合テストの実行
 
-You can run the builds locally by following below commands
+ビルドをローカルで実行するには、次のコマンドを使用します。
 
-Go into the `test-integration` folder with `cd test-integration` from the generator source code root folder
+ジェネレータのソースコードルートフォルダから、`cd test-integration`を使用して`test-integration`フォルダに移動します。
 
-Run `./generate-sample.sh <command_name> [folder] [sample_name:optional] [type of entity]`
+`./generate-sample.sh <command_name> [folder] [sample_name:optional] [type of entity]`を実行します。
 
-This will create a folder with configuration and entities. Then, you can generate manually a JHipster project and test it.
+これにより、構成とエンティティを含むフォルダが作成されます。次に、JHipsterプロジェクトを手動で生成し、テストできます。
 
-Command name can be as below
+コマンド名は次のとおりです。
 
-    `list`: List all sample names
-    `generate`: Generate the sample
+    `list`:すべてのサンプル名を一覧表示します
+    `generate`:サンプルを生成します
 
-## <a name="rules"></a> Coding Rules
+## <a name="rules"></a>コーディングルール
 
-To ensure consistency throughout the source code, keep these rules in mind as you are working:
+ソースコード全体の一貫性を確保するために、作業時には次の規則に注意してください。
 
-- All features or bug fixes **must be tested** by one or more tests.
-- All files must follow the [.editorconfig file](http://editorconfig.org/) located at the root of the JHipster generator project. Please note that generated projects use the same `.editorconfig` file, so that both the generator and the generated projects share the same configuration.
-- Java files **must be** formatted using Intellij IDEA default code style.
-- Generators JavaScript files **must follow** the eslint configuration defined at the project root, which is based on [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
-- Any client side feature/change should be done for both Angular and react clients
-- Web apps JavaScript files **must follow** [Google's JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html).
-- Angular Typescript files **must follow** the [Official Angular style guide](https://angular.io/styleguide).
-- React/Redux Typescript files **may follow** the [React/Redux Typescript guide](https://github.com/piotrwitek/react-redux-typescript-guide).
+- すべての機能またはバグ修正は、1つ以上のテストによって**テストされる必要があります**。
+- すべてのファイルは、JHipsterジェネレータプロジェクトのルートにある[.editorconfigファイル](http://editorconfig.org/)に従う必要があります。生成されたプロジェクトは同じ`.editorconfig`ファイルを使用するため、ジェネレータと生成されたプロジェクトの両方が同じ構成を共有することに注意してください。
+- Javaファイルは、Intellij IDEAデフォルトコードスタイルを使用して**フォーマットする必要があります**。
+- Generators JavaScriptファイルは、プロジェクトルートで定義されたeslint設定に**従う必要があります**。これは、[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)をベースとしたものです。
+- クライアント側の機能/変更は、Angularクライアントとreactクライアントの両方に対して行う必要があります
+- WebアプリのJavaScriptファイルは[GoogleのJavaScriptスタイルガイド](https://google.github.io/styleguide/jsguide.html)に**従う必要があります**。
+- Angular Typescriptファイルは、[Angularスタイルの公式ガイド](https://angular.io/styleguide)に**従う必要があります**。
+- React/Redux Typescriptファイルは、[React/Redux Typescriptガイド](https://github.com/piotrwitek/react-redux-typescript-guide)に**従う場合があります**。
 
-Please ensure to run `npm run lint` and `npm test` on the project root before submitting a pull request. You can also run `npm run lint-fix` to fix some of the lint issues automatically.
+プルリクエストを送信する前に、プロジェクトルートで`npm run lint`および`npm test`を必ず実行してください。`npm run lint-fix`を実行して、いくつかのリント問題を自動的に修正することもできます。
 
-## <a name="templates"></a> Template Guidelines
+## <a name="templates"></a> テンプレートのガイドライン
 
-The template engine used by yeoman is [EJS](http://ejs.co/), its syntax is fairly simple.
-For simple code (few lines), logic can be embedded in the main file but if logic becomes more complex it's better to externalise the JS fragment to a sub template included by the first one and located in same folder.
+yeomanが使用しているテンプレートエンジンは[EJS](http://ejs.co/)で、その構文はかなり単純です。
+単純なコード(数行)の場合、ロジックをメインファイルに埋め込むことができますが、ロジックがより複雑になる場合は、JSフラグメントを最初のテンプレートに含まれるサブテンプレートに外部化し、同じフォルダ配置する方が良いです。
 
-Sub templates should be named with the `ejs` extension because it's the default one, it enables editors to apply correct syntax highlighting and it enables us to use a very concise syntax:
+サブテンプレートの名前には`ejs`拡張子を付ける必要があります。これは、デフォルトのテンプレートであり、エディタが正しい構文強調表示を適用できるようにし、非常に簡潔な構文を使用できるようにするためです。
 
     <%- include('../common/field_validators', {field, reactive}); -%>
 
-This statement means that [_PersistClass_.java.jhi.jakarta_validation.ejs](generators/server/templates/entity/src/main/java/package/domain/_PersistClass_.java.jhi.jakarta_validation.ejs) template includes [field_validators.ejs](generators/server/templates/entity/src/main/java/package/common/field_validators.ejs) sub template.
+この文は、[_PersistClass_.java.jhi.jakarta_validation.ejs](generators/server/templates/entity/src/main/java/package/domain/_PersistClass_.java.jhi.jakarta_validation.ejs)テンプレートが[field_validators.ejs](generators/server/templates/entity/src/main/java/package/common/field_validators.ejs)サブテンプレートを含むことを意味します。
 
-Sub templates can be unit tested.
+サブテンプレートは単体テストが可能です。
 
-## <a name="commit"></a> Git Commit Guidelines
+## <a name="commit"></a>Gitコミットのガイドライン
 
-We have rules over how our git commit messages must be formatted. Please ensure to [squash](https://help.github.com/articles/about-git-rebase/#commands-available-while-rebasing) unnecessary commits so that your commit history is clean.
+git commitメッセージをフォーマットする方法にはルールがあります。コミット履歴がクリーンになるように、不要なコミットを[squash](https://help.github.com/articles/about-git-rebase/#commands-available-while-rebase)してください。
 
-If the commit only involves documentation changes you can skip the continuous integration pipelines using `[ci skip]` or `[skip ci]` in your commit message header.
+コミットにドキュメントの変更のみが含まれる場合は、コミットメッセージヘッダーで`[ci skip]`または`[skip ci]`を使用して、継続的インテグレーションパイプラインをスキップできます。
 
-### <a name="commit-message-format"></a> Commit Message Format
+### <a name="commit-message-format"></a>コミットメッセージの形式
 
-Each commit message consists of a **header**, a **body** and a **footer**.
+各コミットメッセージは、**ヘッダー**、**本文**、および**フッター**で構成されます。
 
 ```
 <header>
@@ -367,57 +363,57 @@ Each commit message consists of a **header**, a **body** and a **footer**.
 <footer>
 ```
 
-Any line of the commit message cannot be longer 100 characters! This allows the message to be easier
-to read on GitHub as well as in various git tools.
+コミットメッセージのどの行も100文字を超えることはできません!これにより、メッセージがより簡単になり、
+GitHubやさまざまなgitツールで読むことができます。
 
-### Header
+### ヘッダー
 
-The Header contains a succinct description of the change:
+ヘッダーには、変更に関する簡潔な説明が表示されます。
 
-- use the imperative, present tense: "change" not "changed" nor "changes"
-- don't capitalize first letter
-- no dot (.) at the end
+- 命令を使用します。"changed"でも"changes"でもなく現在形の"change"です。
+- 最初の文字を大文字にしないでください。
+- 最後にドット(.)をつけないでください。
 
-### Body
+### 本体
 
-If your change is simple, the Body is optional.
+変更が単純な場合は、Bodyはオプションです。
 
-Just as in the Header, use the imperative, present tense: "change" not "changed" nor "changes".
-The Body should include the motivation for the change and contrast this with previous behavior.
+ヘッダーと同様に、"changed"でも"changes"でもなく、"change"という命令現在形を使用します。
+ボディには、変更の動機を含め、これを以前の行動と比較する必要があります。
 
-### Footer
+### フッター
 
-The footer is the place to reference GitHub issues that this commit **Closes**.
+フッターは、このコミットが**クローズ**するGitHubイシューを参照する場所です。
 
-You **must** use the [GitHub keywords](https://help.github.com/articles/closing-issues-via-commit-messages) for
-automatically closing the issues referenced in your commit.
+コミットで参照された懸案事項を自動的にクローズするために[GitHubキーワード](https://help.github.com/articles/closing-issues-via-commit-messages)
+を使用する必要があります。
 
-### Example
+### 例
 
-For example, here is a good commit message:
+たとえば、次のような適切なコミットメッセージが表示されます。
 
 ```
-upgrade to Spring Boot 1.1.7
+upgrade to Spring Boot 1.1.7 (Spring Boot 1.1.7にアップグレードする)
 
 upgrade the Maven and Gradle builds to use the new Spring Boot 1.1.7,
-see http://spring.io/blog/2014/09/26/spring-boot-1-1-7-released
+see http://spring.io/blog/2014/09/26/spring-boot-1-1-7-released （MavenとGradleのビルドをアップグレードして、新しいSpring Boot 1.1.7を使用する。http://spring.io/blog/2014/09/26/spring-boot-1-1-7-released を参照）
 
-Fix #1234
+Fix #1234 （#1234の修正）
 ```
 
-### Regular Contributor Guidelines
+### 定期的なコントリビュータのガイドライン
 
-These are some of the guidelines that we would like to emphasize if you are a regular contributor to the project
-or joined the [JHipster team](https://www.jhipster.tech/team/).
+これらは、あなたがプロジェクトに定期的に貢献している場合、
+または[JHipsterチーム](https://www.JHipster.tech/team/)に参加している場合に強調したいガイドラインの一部です。
 
-- We recommend not committing directly to main, but always submit changes through PRs.
-- Before merging, try to get at least one review on the PR.
-- Add appropriate labels to issues and PRs that you create (if you have permission to do so).
-- Follow the project's [policies](https://www.jhipster.tech/policies/#-policies).
-- Follow the project's [Code of Conduct](https://github.com/jhipster/generator-jhipster/blob/main/CODE_OF_CONDUCT.md)
-  and be polite and helpful to users when answering questions/bug reports and when reviewing PRs.
-- We work on our free time, so we have no obligation nor commitment. Work/life balance is important, so don't
-  feel tempted to put in all your free time fixing something.
+- メインに直接コミットするのではなく、常にPRを通じて変更を送信することをお勧めします。
+- マージする前に、PRに関するレビューを少なくとも1つ取得してください。
+- 作成した問題およびPRに適切なラベルを追加します（追加する権限がある場合）。
+- プロジェクトの[ポリシー](https://www.jhipster.tech/policies/#-policies)に従います。
+- プロジェクトの[行動基準](https://github.com/jhipster/generator-jhipster/blob/main/CODE_OF_CONDUCT.md)に従います。
+  また、質問やバグレポートに答えたり、PRをレビューしたりするときには、ユーザーに対して礼儀正しく、役に立つようにしてください。
+- 私たちは自由な時間に仕事をしているので、義務もコミットメントもありません。仕事と生活のバランスは重要なので、
+何かを修正するために自由な時間をすべて費やさないでください。
 
 [issue-template]: https://github.com/jhipster/generator-jhipster/issues/new?template=BUG_REPORT.md
 [feature-template]: https://github.com/jhipster/generator-jhipster/issues/new?template=FEATURE_REQUEST.md
